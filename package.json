@@ -1,19 +1,19 @@
 {
-  "name": "FashTime Website",
+  "name": "fashtime-website",
   "version": "1.0.0",
   "description": "",
   "main": "",
   "scripts": {
-    "start": "node dist/server/index.js",
-    "open": "google-chrome --incognito \"http://localhost:8080\"",
+    "start": "http-server dist/client",
     "clean-dist": "rm -rf dist",
     "make-dist": "mkdirp dist",
     "copy-all": "npm run copy-client",
     "copy-client": "copy \"src/client/**/*.*\" \"!src/client/scripts/**/*.*\" \"!src/client/styles/**/*.*\" dist/client",
-    "dev": "npm run build && parallelshell \"npm run watch\" \"npm run serve\" \"npm run open\"",
+    "dev": "npm run build && parallelshell \"npm run watch\" \"npm run start\"",
     "watch": "npm-watch",
-    "build": "npm run clean-dist && npm run make-dist && npm run copy-all && npm run build-sass",
+    "build": "npm run clean-dist && npm run make-dist && npm run copy-all && npm run build-sass && npm run build-views",
     "build-sass": "node build/transpile-sass.js",
+    "build-views": "pug src/client/views/* --out dist/client/",
     "release": "npm version patch && npm run build",
     "deploy": "npm run build-deploy"
   },
@@ -24,7 +24,13 @@
         "scss"
       ]
     },
-    "copy-client": "src/client"
+    "copy-client": "src/client",
+    "build-views": {
+      "patterns": "src/client",
+      "extensions": [
+        "pug", "scss"
+      ]
+    }
   },
   "author": "Alessandro Menduni",
   "license": "ISC",
@@ -35,5 +41,8 @@
     "node-sass": "^4.5.0",
     "npm-watch": "^0.1.8",
     "parallelshell": "^2.0.0",
-  }
+    "pug": "^2.0.0-beta11",
+    "pug-cli": "^1.0.0-alpha6"
+  },
+  "dependencies": {}
 }

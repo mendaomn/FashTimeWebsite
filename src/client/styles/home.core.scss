@@ -5,17 +5,8 @@
 @import '_global';
 
 // Elements
-@import '_elements/_grid';
-@import '_elements/_strip';
-@import '_elements/_button';
-@import '_elements/_title';
-@import '_elements/_card';
+@import '_elements/_link';
 
 // Components
-@import '_header/_header';
-@import '_logo/_logo';
-@import '_nav/_nav';
-@import '_masthead/_masthead';
-@import '_3steps/_3steps';
-
-// @import '_modifiers';
+@import '_components/_footer';
+@import '_components/_sitemap';

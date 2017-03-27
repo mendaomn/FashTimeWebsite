@@ -6,22 +6,10 @@ const outPath = path.join(__dirname, '..', 'dist');
 const files = [
   {
     in: path.join(inPath, 'home.core.scss'),
-    out: path.join(outPath, 'views', 'inlines', 'home.core.css')
+    out: path.join(inPath, 'home.core.css')
   }, {
     in: path.join(inPath, 'home.later.scss'),
     out: path.join(outPath, 'client', 'styles', 'home.later.css')
-  }, {
-    in: path.join(inPath, 'prodotti.core.scss'),
-    out: path.join(outPath, 'views', 'inlines', 'prodotti.core.css')
-  }, {
-    in: path.join(inPath, 'prodotti.later.scss'),
-    out: path.join(outPath, 'client', 'styles', 'prodotti.later.css')
-  }, {
-    in: path.join(inPath, 'prodotto.core.scss'),
-    out: path.join(outPath, 'views', 'inlines', 'prodotto.core.css')
-  }, {
-    in: path.join(inPath, 'prodotto.later.scss'),
-    out: path.join(outPath, 'client', 'styles', 'prodotto.later.css')
   }
 ];
 

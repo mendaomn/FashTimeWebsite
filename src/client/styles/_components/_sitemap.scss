@@ -1,0 +1,26 @@
+// Vars
+$sitemap-title-margin: 25px;
+$sitemap-item-margin: 15px;
+
+.c-sitemap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.c-sitemap-block {
+  text-align: center;
+}
+
+.c-sitemap-list {
+  @include _listreset;
+}
+
+.c-sitemap-list-title {
+  margin: $sitemap-title-margin 0;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.c-sitemap-item {
+  margin-bottom: $sitemap-item-margin;
+}
