@@ -1,0 +1,33 @@
+// Vars
+$ultimi-articoli-block-margin: 35px;
+$ultimi-articoli-border-color: rgba($_color-darkshaft, 0.4);
+
+.c-ultimi-articoli {
+  @include _sidepadding;
+  
+  background: $_color-lightgrey;
+  color: $_color-darkshaft;
+}
+
+.c-ultimi-articoli__ricetta {
+  margin-right: $ultimi-articoli-block-margin;
+}
+
+.c-ultimi-articoli__articolo {
+  padding-left: $ultimi-articoli-block-margin;
+  border-left: 1px solid $ultimi-articoli-border-color;
+}
+
+@media (max-width: $_bp-m) {
+  .c-ultimi-articoli__ricetta {
+    margin-right: 0;
+    margin-bottom: $ultimi-articoli-block-margin;
+  }
+
+  .c-ultimi-articoli__articolo {
+    padding-left: 0;
+    padding-top: $ultimi-articoli-block-margin;
+    border-top: 1px solid $ultimi-articoli-border-color;
+    border-left: 0;
+  }
+}

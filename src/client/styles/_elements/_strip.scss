@@ -1,0 +1,65 @@
+// Vars
+$strip-height: 400px;
+$strip-padding: 50px;
+$strip-headline-width: 300px;
+$strip-headline-width-large: 400px;
+$strip-lead-margin: 25px;
+$strip-cta-margin: 30px;
+
+.o-strip {
+  overflow: auto;
+  display: flex;
+  align-items: center;
+  padding: $strip-padding 0;
+  min-height: $strip-height;
+}
+
+.o-strip__headline {
+  max-width: $strip-headline-width;
+}
+
+.o-strip--both
+.o-strip__left,
+.o-strip--both
+.o-strip__right {
+  flex: 1;
+}
+
+.o-strip--right {
+  justify-content: flex-end;
+}
+
+.o-strip--right
+.o-strip__headline {
+  text-align: right;
+}
+
+.o-strip--center
+.o-strip__headline {
+  max-width: none;
+  text-align: center;
+}
+
+.o-strip__headline-title {
+  margin: 0;
+}
+
+.o-strip__headline-lead {
+  margin-top: $strip-lead-margin;
+}
+
+.o-strip__headline-cta {
+  margin-top: $strip-cta-margin;
+}
+
+@media (min-width: $_bp-m) {
+  .o-strip__headline {
+    max-width: $strip-headline-width-large;
+  }
+}
+
+@media (max-width: $_bp-m) {
+  .o-strip--both {
+    flex-direction: column;
+  }
+}

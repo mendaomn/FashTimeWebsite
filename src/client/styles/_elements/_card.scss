@@ -1,0 +1,9 @@
+// Vars
+$card-padding: 25px;
+
+.o-card {
+  display: inline-block;
+  padding: $card-padding;
+  background-color: $_color-white;
+  box-shadow: 0 0 3px rgba(0,0,0,0.4);
+}

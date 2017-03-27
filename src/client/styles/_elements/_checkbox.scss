@@ -1,0 +1,39 @@
+// Vars
+$checkbox-spacing: 10px;
+$checkbox-icon-width: 28px;
+
+.o-checkbox {
+  margin-top: $checkbox-spacing;
+
+  &:first-child {
+    margin-top: 0;
+  }
+}
+
+.o-checkbox__input {
+  visibility: hidden;
+  width: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.o-checkbox__label {
+  display: inline-block;
+  margin-left: -($checkbox-icon-width - 25px);
+  padding-left: $checkbox-icon-width + 25px;
+  background: {
+    image: url(/static/images/raw/icons/checkbox-empty.svg);
+    repeat: no-repeat;
+    position: 0 0;
+    size: $checkbox-icon-width;
+  }
+  line-height: $checkbox-icon-width;
+  text-transform: uppercase;
+}
+
+.o-checkbox__input:checked + .o-checkbox__label {
+  background: {
+    image: url(/static/images/raw/icons/checkbox-full.svg);
+  }
+  font-weight: bold;
+}

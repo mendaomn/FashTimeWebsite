@@ -1,0 +1,17 @@
+.o-title {
+  font-weight: normal;
+}
+
+.o-title--large {
+  font-size: $_fs-large;
+}
+
+.o-title--small {
+  font-size: $_fs-normal;
+}
+
+@media (max-width: $_bp-m) {
+  .o-title--large {
+    font-size: $_fs-medium;
+  }
+}

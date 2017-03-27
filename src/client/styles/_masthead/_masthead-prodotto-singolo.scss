@@ -1,0 +1,27 @@
+// Vars
+$prodotto-price-margin: 15px;
+$prodotto-strip-height: 300px;
+
+.c-masthead-prodotto {
+  align-items: flex-end;
+  margin-top: -$nav-height;
+  min-height: $prodotto-strip-height;
+  background: {
+    color: $_color-darkshaft;
+    position: center;
+    size: cover;
+  }
+  color: $_color-white;
+}
+
+.c-masthead-prodotto__price {
+  margin-top: $prodotto-price-margin;
+  color: $_color-lime;
+  font-size: $_fs-medium;
+  font-weight: bold;
+}
+
+.c-masthead-prodotto__prev-price {
+  font-size: $_fs-normal;
+  font-weight: bold;
+}

@@ -1,0 +1,14 @@
+// Vars
+$tag-width: 75px;
+$tag-padding: 5px;
+
+.o-tag {
+  display: inline-block;
+  padding: $tag-padding;
+  min-width: 75px;
+  background-color: $_color-lime;
+  color: $_color-darkshaft;
+  font-size: $_fs-xsmall;
+  font-weight: bold;
+  text-transform: uppercase;
+}

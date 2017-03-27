@@ -1,0 +1,26 @@
+* {
+  box-sizing: border-box;
+  font-family: inherit;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100%;
+}
+
+.fonts-ready body {
+  font-family: 'caviar_dreamsregular', Arial, Helvetica, sans-serif;
+}
+
+button {
+  border: none;
+}
+
+a {
+  @include _linkreset;
+}

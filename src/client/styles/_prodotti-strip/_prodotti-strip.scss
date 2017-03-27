@@ -1,0 +1,16 @@
+.c-prodotti-strip {
+  background: {
+    color: $_color-darkshaft;
+    image: url(/static/images/raw/backgrounds/home-products.jpg);
+    position: center;
+    size: cover;
+  }
+  color: $_color-white;
+}
+
+@media (max-width: $_bp-m) {
+  .c-prodotti-strip
+  .o-strip__headline {
+    max-width: none;
+  }
+}

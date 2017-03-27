@@ -1,0 +1,21 @@
+.c-blog-strip {
+  background: {
+    color: $_color-lime;
+    image: url(/static/images/raw/home-orange.png);
+    position: 75% center;
+    size: 350px;
+    repeat: no-repeat;
+  }
+  color: $_color-darkshaft;
+}
+
+@media (max-width: $_bp-m) {
+  .c-blog-strip {
+    background-image: none;
+  }
+
+  .c-blog-strip
+  .o-strip__headline {
+    max-width: none;
+  }
+}

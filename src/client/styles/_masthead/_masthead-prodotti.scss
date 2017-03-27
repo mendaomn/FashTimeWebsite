@@ -1,0 +1,40 @@
+// Vars
+$prodotti-headline-width: 422px;
+$prodotti-headline-width-s: 318px;
+$prodotti-search-margin: 35px;
+$prodotti-strip-height: 300px;
+
+.c-masthead-prodotti {
+  margin-top: -$nav-height;
+  min-height: $prodotti-strip-height;
+  background: {
+    color: $_color-darkshaft;
+    image: url(/static/images/raw/backgrounds/home-masthead.jpg);
+    position: center;
+    size: cover;
+  }
+  color: $_color-white;
+}
+
+.c-masthead-prodotti .o-strip__headline {
+  max-width: $prodotti-headline-width-s;
+
+  @media (min-width: $_bp-m) {
+    max-width: $prodotti-headline-width;
+  }
+}
+
+.c-masthead-prodotti__form {
+  display: flex;
+  margin-top: $prodotti-search-margin;
+  max-height: 25px;
+}
+
+.c-masthead-prodotti__search-icon {
+  margin-left: 15px;
+  max-width: 25px;
+}
+
+.c-masthead-prodotti .o-search {
+  flex: 1;
+}

@@ -1,0 +1,39 @@
+{
+  "name": "FashTime Website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "",
+  "scripts": {
+    "start": "node dist/server/index.js",
+    "open": "google-chrome --incognito \"http://localhost:8080\"",
+    "clean-dist": "rm -rf dist",
+    "make-dist": "mkdirp dist",
+    "copy-all": "npm run copy-client",
+    "copy-client": "copy \"src/client/**/*.*\" \"!src/client/scripts/**/*.*\" \"!src/client/styles/**/*.*\" dist/client",
+    "dev": "npm run build && parallelshell \"npm run watch\" \"npm run serve\" \"npm run open\"",
+    "watch": "npm-watch",
+    "build": "npm run clean-dist && npm run make-dist && npm run copy-all && npm run build-sass",
+    "build-sass": "node build/transpile-sass.js",
+    "release": "npm version patch && npm run build",
+    "deploy": "npm run build-deploy"
+  },
+  "watch": {
+    "build-sass": {
+      "patterns": "src/client",
+      "extensions": [
+        "scss"
+      ]
+    },
+    "copy-client": "src/client"
+  },
+  "author": "Alessandro Menduni",
+  "license": "ISC",
+  "devDependencies": {
+    "clean-css": "^4.0.8",
+    "copy": "^0.3.0",
+    "mkdirp": "^0.5.1",
+    "node-sass": "^4.5.0",
+    "npm-watch": "^0.1.8",
+    "parallelshell": "^2.0.0",
+  }
+}

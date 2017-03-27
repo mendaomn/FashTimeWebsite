@@ -1,0 +1,31 @@
+// Vars
+$button-height:       50px;
+$button-padding-top:  10px;
+$button-padding-left: 25px;
+
+.o-button {
+  display: inline-block;
+  padding: $button-padding-top $button-padding-left;
+  min-height: $button-height;
+  background-color: $_color-lime;
+  border-radius: 4px;
+  font-weight: bold;
+  color: $_color-darkshaft;
+  text-transform: uppercase;
+  cursor: pointer;
+
+  @include _fasttransition(background-color);
+
+  &:hover {
+    background-color: darken($_color-lime, 15);
+  }
+}
+
+.o-button--dark {
+  background-color: $_color-brown;
+  color: $_color-white;
+
+  &:hover {
+    background-color: darken($_color-brown, 10);
+  }
+}
