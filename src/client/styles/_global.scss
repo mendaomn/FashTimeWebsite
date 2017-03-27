@@ -23,4 +23,11 @@ button {
 
 a {
   @include _linkreset;
+
+  color: $_color-crimson;
+
+  &[disabled] {
+    color: rgba($_color-darkshaft, 0.4);
+    cursor: default;
+  }
 }
