@@ -1,6 +1,7 @@
 // Vars
 $sitemap-title-margin: 25px;
 $sitemap-item-margin: 15px;
+$sitemap-block-width: 150px;
 
 .c-sitemap {
   display: flex;
@@ -8,6 +9,7 @@ $sitemap-item-margin: 15px;
 }
 
 .c-sitemap-block {
+  min-width: $sitemap-block-width;
   text-align: center;
 }
 
@@ -23,4 +25,10 @@ $sitemap-item-margin: 15px;
 
 .c-sitemap-item {
   margin-bottom: $sitemap-item-margin;
+}
+
+@media (max-width: $_bp-m) {
+  .c-sitemap {
+    flex-direction: column;
+  }
 }
