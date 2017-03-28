@@ -1,0 +1,66 @@
+// Vars
+$mh-home-h: 550px;
+$mh-home-lead-margin: 25px;
+$mh-home-btn-padding: 15px;
+$mh-home-btn-w: 175px;
+$mh-home-btn-h: 65px;
+
+.c-masthead {
+  @include _sidepadding;
+
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: $grid-margin-side;
+  height: $mh-home-h;
+  background-color: $_color-crimson;
+  background-image: linear-gradient(to right, $_color-crimson, $_color-orange);
+}
+
+.c-masthead__lead {
+  align-self: flex-start;
+  margin-top: $mh-home-lead-margin;
+  color: $_color-white;
+  font-size: $_fs-normal;
+}
+
+.c-masthead__logo {
+  height: 200px;
+
+  img {
+    max-height: 100%;
+  }
+}
+
+.c-masthead__btns {
+  display: flex;
+}
+
+.c-masthead__ios-btn,
+.c-masthead__andr-btn {
+  background-color: $_color-white;
+  border-radius: 8px;
+  padding: $mh-home-btn-padding;
+  width: $mh-home-btn-w;
+  height: $mh-home-btn-h;
+  text-align: center;
+
+  img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+}
+
+.c-masthead__ios-btn {
+
+}
+
+.c-masthead__andr-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 35px;
+  color: rgba($_color-darkshaft, 0.4);
+}
