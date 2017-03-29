@@ -53,14 +53,21 @@ $mh-home-btn-h: 65px;
   }
 }
 
-.c-masthead__ios-btn {
-
-}
-
 .c-masthead__andr-btn {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-left: 35px;
   color: rgba($_color-darkshaft, 0.4);
+}
+
+@media (max-width: $_bp-m) {
+  .c-masthead__btns {
+    flex-direction: column;
+  }
+
+  .c-masthead__andr-btn {
+    margin-top: 15px;
+    margin-left: 0;
+  }
 }

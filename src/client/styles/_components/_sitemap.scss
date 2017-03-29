@@ -16,6 +16,8 @@ $sitemap-block-width: 150px;
 
 .c-sitemap-list {
   @include _listreset;
+
+  position: relative;
 }
 
 .c-sitemap-list-title {
@@ -26,10 +28,23 @@ $sitemap-block-width: 150px;
 
 .c-sitemap-item {
   margin-bottom: $sitemap-item-margin;
+
+  img {
+    position: absolute;
+    right: 0;
+    max-width: 20px;
+    max-height: 20px;
+  }
 }
 
 @media (max-width: $_bp-m) {
   .c-sitemap {
     flex-direction: column;
+  }
+
+  .c-sitemap-item img {
+    position: relative;
+    margin-bottom: -5px;
+    margin-left: $sitemap-item-margin;
   }
 }
