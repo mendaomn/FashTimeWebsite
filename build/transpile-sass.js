@@ -10,6 +10,12 @@ const files = [
   }, {
     in: path.join(inPath, 'home.later.scss'),
     out: path.join(outPath, 'client', 'styles', 'home.later.css')
+  }, {
+    in: path.join(inPath, 'about.core.scss'),
+    out: path.join(inPath, 'about.core.css')
+  }, {
+    in: path.join(inPath, 'about.later.scss'),
+    out: path.join(outPath, 'client', 'styles', 'about.later.css')
   }
 ];
 
