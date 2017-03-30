@@ -27,7 +27,7 @@ a {
   color: $_color-crimson;
 
   &[disabled] {
-    color: rgba($_color-darkshaft, 0.4);
+    color: $_color-grey;
     cursor: default;
   }
 }

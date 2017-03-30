@@ -1,0 +1,18 @@
+// Spacing
+$tb-pad:  15px;
+
+.o-text-block {
+  padding: $tb-pad 0;
+
+  & + .o-text-block {
+    border-top: 5px solid $_color-crimson;
+  }
+}
+
+.o-text-block__title {
+  font-size: $_fs-large;
+}
+
+.o-text-block__text {
+  font-size: $_fs-normal;
+}
