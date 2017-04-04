@@ -1,0 +1,22 @@
+// Set up
+@import '_variables';
+@import '_fonts';
+@import '_mixins';
+@import '_global';
+
+// Elements
+@import '_elements/_text-block';
+
+// Components
+@import '_components/_header';
+@import '_components/_team';
+@import '_components/_team-member';
+@import '_components/_footer';
+@import '_components/_sitemap';
+
+.team-intro {
+  @include _sidepadding;
+
+  margin: 50px 0;
+  max-width: 1000px;
+}

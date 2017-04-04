@@ -31,3 +31,9 @@
 @mixin _fasttransition($property) {
   transition: $property 0.3s ease-in-out;
 }
+
+// Cosmetic
+
+@mixin _divider {
+  border-top: 5px solid $_color-crimson;
+}

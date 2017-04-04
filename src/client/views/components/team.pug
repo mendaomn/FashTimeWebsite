@@ -1,0 +1,79 @@
+include team-member
+
+-
+  var members = [
+    {
+      avatar: "/images/raw/backgrounds/mauro.jpg",
+      role: "CEO",
+      name: "Marco Di Bendetto",
+      age: "24",
+      nationality: "Italian",
+      linkedin: "#",
+      angellist: "#",
+      bio: "Responsible for all matters. Manages business clients, events and press (& more)"
+    }, {
+      avatar: "/images/raw/backgrounds/marco.png",
+      role: "CVO/CIO/CPO",
+      name: "Mauro Borgato",
+      age: "24",
+      nationality: "Italian",
+      linkedin: "#",
+      angellist: "#",
+      medium: "#",
+      bio: "Shapes vision & mission of the company; shapes new ideas, design products, manages products (& more)"
+    }, {
+      avatar: "/images/raw/backgrounds/kai.jpg",
+      role: "CSO",
+      name: "Kai Schildhauer",
+      age: "26",
+      nationality: "German",
+      linkedin: "#",
+      angellist: "#",
+      bio: "Takes care of financial/administrative/sales aspects (& more)"
+    }, {
+      avatar: "/images/raw/backgrounds/alejandro.png",
+      role: "CTO",
+      name: "Alejandro Carrera",
+      age: "26",
+      nationality: "Spanish",
+      linkedin: "#",
+      angellist: "#",
+      bio: "Develops and codes the FashTime platform (& more)"
+    }
+  ];
+
+section.c-team
+  - var titleText = "The FashTime Founders"
+  include title
+
+  .c-team__cols
+    .c-team__col
+      +team-member(members[0])
+      +team-member(members[2])
+    .c-team__col.c-team__col--center
+      img.c-team__butterfly(src="/images/raw/icons/butterfly-colored.png")
+    .c-team__col
+      +team-member(members[1])
+      +team-member(members[3])
+
+  .c-team__tools
+    - var titleText = "How we work: a strongly organized startup"
+    include title
+
+    .c-team__tool
+      .c-team__tool-img
+        img(src="/images/raw/icons/axure.png")
+      .c-team__tool-descr Functional & creative briefs, prototyping, wireframing, UX design, functional Design
+
+    .c-team__tool
+      .c-team__tool-img
+        img(src="/images/raw/icons/slack.png")
+      .c-team__tool-descr Team collaboration and communication
+
+    .c-team__tool
+      .c-team__tool-imgs
+        .c-team__tool-img
+          img(src="/images/raw/icons/asana.png")
+        .c-team__tool-img
+          img(src="/images/raw/icons/drive.png")
+      .c-team__tool-descr Startup Management (product + all other units)

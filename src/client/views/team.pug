@@ -1,0 +1,15 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="utf-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    title FashTime - About
+    style
+      include ../styles/team.core.css
+  body
+    include components/header
+    .team-intro
+      - var textBlockText = `The founders team is a brilliant and unusual combination of different skills, backgrounds and personalities. Its members come from three different countries (Italy, Germany, Spain) and they are all under 26yo. The whole team met in Madrid Spain during the first months of 2015. Mauro Di Benedetto and Marco Borgato met during their undergrad studies at Bocconi University (Milan). Marco had the idea to implement the concept of time for a social app back in 2013.<p>The FashTime Team is focused on building a culture made of purpose/vision/mission/values-driven individuals and design thinkers. Follow the way of the butterfly...</p>`
+      include components/text-block
+    include components/team.pug
+    include components/sitemap

@@ -1,0 +1,87 @@
+// Vars
+$tm-butterfly-w: 220px;
+$tm-butterfly-w-s: 175px;
+$tm-tools-margin: 50px;
+$tm-tool-margin: 50px;
+$tm-tool-descr-margin: 100px;
+$tm-tool-img-w: 100px;
+
+.c-team {
+  @include _sidepadding;
+}
+
+.c-team__cols {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.c-team__butterfly {
+  width: $tm-butterfly-w;
+}
+
+.c-team__tools {
+  @include _divider;
+
+  margin-top: $tm-tools-margin;
+  padding-top: $tm-tools-margin;
+}
+
+.c-team__tool {
+  display: flex;
+  margin: $tm-tool-margin 0;
+}
+
+.c-team__tool-imgs {
+  display: inline-flex;
+  flex-direction: column;
+}
+
+.c-team__tool-img {
+  max-width: $tm-tool-img-w;
+
+  img {
+    max-width: 100%;
+  }
+}
+
+.c-team__tool-descr {
+  margin-left: $tm-tool-descr-margin;
+  max-width: 300px;
+}
+
+@media (max-width: 1000px) {
+  .c-team__butterfly {
+    width: $tm-butterfly-w-s;
+  }
+}
+
+@media (max-width: $_bp-m) {
+  .c-team__cols {
+    flex-direction: column;
+  }
+
+  .c-team__col--center {
+    display: none;
+  }
+
+  .c-team-member {
+    text-align: center;
+  }
+
+  .c-team-member__info {
+    justify-content: center;
+  }
+
+  .c-team__tool {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .c-team__tool-descr {
+    margin-top: 0.25 * $tm-tool-margin;
+    margin-left: 0;
+    max-width: none;
+    text-align: center;
+  }
+}

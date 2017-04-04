@@ -16,6 +16,9 @@ const files = [
   }, {
     in: path.join(inPath, 'about.later.scss'),
     out: path.join(outPath, 'client', 'styles', 'about.later.css')
+  }, {
+    in: path.join(inPath, 'team.core.scss'),
+    out: path.join(inPath, 'team.core.css')
   }
 ];
 

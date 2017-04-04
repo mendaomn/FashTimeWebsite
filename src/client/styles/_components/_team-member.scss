@@ -1,0 +1,73 @@
+// Vars
+$tmbr-w: 380px;
+$tmbr-margin: 100px;
+$tmbr-img-w: 120px;
+$tmbr-img-margin: 25px;
+$tmbr-role-pad: 3px;
+$tmbr-icon-w: 20px;
+$tmbr-icon-margin: 5px;
+$tmbr-info-spacing: 10px;
+$tmbr-bio-margin: 15px;
+
+.c-team-member {
+  margin-top: $tmbr-margin;
+  max-width: $tmbr-w;
+}
+
+.c-team-member img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.c-team-member__img {
+  position: relative;
+  margin: $tmbr-img-margin auto;
+  background: {
+    color: $_color-darkshaft;
+    size: cover;
+    position: center top;
+  }
+  width: $tmbr-img-w;
+  height: $tmbr-img-w;
+  border: 2px solid $_color-crimson;
+  border-radius: 50%;
+}
+
+.c-team-member__role {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  display: inline-block;
+  padding: $tmbr-role-pad 1px;
+  background-color: $_color-crimson;
+  color: $_color-white;
+  transform: translate(-50%, -90%) rotate(-10deg);
+}
+
+.c-team-member__info {
+  display: flex;
+}
+
+.c-team-member__age,
+.c-team-member__nationality {
+  margin-left: 2px;
+}
+
+.c-team-member__nationality {
+  margin-right: $tmbr-info-spacing;
+}
+
+.c-team-member__link {
+  display: inline-block;
+  margin-left: $tmbr-icon-margin;
+  height: $tmbr-icon-w;
+  width: $tmbr-icon-w;
+}
+
+.c-team-member__name {
+  color: $_color-crimson;
+}
+
+.c-team-member__bio {
+  margin-top: $tmbr-bio-margin;
+}

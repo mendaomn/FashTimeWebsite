@@ -1,0 +1,18 @@
+mixin team-member(member)
+  .c-team-member
+    .c-team-member__img(style="background-image:url('"+member.avatar+"')")
+      .c-team-member__role= member.role
+    .c-team-member__info
+      .c-team-member__name= member.name + ", "
+      .c-team-member__age= member.age + ", "
+      .c-team-member__nationality= member.nationality
+      if member.linkedin
+        a.c-team-member__link(href!=member.linkedin)
+          img(src="/images/raw/icons/linkedin.png")
+      if member.angellist
+        a.c-team-member__link(href!=member.angellist)
+          img(src="/images/raw/icons/angellist.png")
+      if member.medium
+        a.c-team-member__link(href!=member.medium)
+          img(src="/images/raw/icons/medium.png")
+    .c-team-member__bio= member.bio
