@@ -19,6 +19,9 @@ const files = [
   }, {
     in: path.join(inPath, 'team.core.scss'),
     out: path.join(inPath, 'team.core.css')
+  }, {
+    in: path.join(inPath, 'hw.core.scss'),
+    out: path.join(inPath, 'hw.core.css')
   }
 ];
 

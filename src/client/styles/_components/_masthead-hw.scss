@@ -1,0 +1,28 @@
+// Vars
+$mh-about-h: 550px;
+$mh-about-lead-margin: 75px;
+$mh-about-lead-w: 1000px;
+
+.c-masthead {
+  @include _sidepadding;
+
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: $grid-margin-side;
+  height: $mh-about-h;
+  background-color: $_color-darkshaft;
+  background-image: url(images/raw/backgrounds/hw-masthead.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.c-masthead__lead {
+  align-self: flex-start;
+  margin-top: $mh-about-lead-margin;
+  max-width: $mh-about-lead-w;
+  color: $_color-white;
+  font-size: $_fs-small;
+}
