@@ -19,6 +19,9 @@ const files = [
   }, {
     in: path.join(inPath, 'mobile.core.scss'),
     out: path.join(inPath, 'mobile.core.css')
+  }, {
+    in: path.join(inPath, 'business.core.scss'),
+    out: path.join(inPath, 'business.core.css')
   }
 ];
 

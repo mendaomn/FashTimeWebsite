@@ -4,8 +4,4 @@ $tb-pad:  15px;
 .o-text-block {
   padding: $tb-pad 0;
   font-size: $_fs-small;
-
-  & + .o-text-block {
-    @include _divider;
-  }
 }
