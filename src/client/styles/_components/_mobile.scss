@@ -1,0 +1,47 @@
+// Vars
+$mob-screen-margin: 50px;
+$mob-screen-title-margin: 50px;
+$mob-screen-descr-w: 400px;
+$mob-screen-h: 600px;
+
+
+.c-mobile {
+  @include _sidepadding;
+
+  .o-title {
+    margin-top: 0;
+  }
+}
+
+.c-mobile__screen {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: $mob-screen-margin;
+}
+
+.c-mobile__img {
+  height: $mob-screen-h;
+
+  img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+}
+
+.c-mobile__descr {
+  flex: 1;
+  text-align: center;
+}
+
+.c-mobile__descr-title {
+  color: $_color-crimson;
+  margin-bottom: $mob-screen-title-margin;
+}
+
+.c-mobile__descr-title,
+.c-mobile__descr-body {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: $mob-screen-descr-w;
+}

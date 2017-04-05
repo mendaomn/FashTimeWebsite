@@ -1,0 +1,33 @@
+// Vars
+$ps-pad: 75px;
+$ps-item-margin: 100px;
+$ps-icon-w: 150px;
+$ps-label-pad: 10px;
+
+.c-p-strip {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: $ps-pad 0;
+}
+
+.c-p-strip__item {
+  margin-left: $ps-item-margin;
+  width: $ps-icon-w;
+  text-align: center;
+
+  &:first-child {
+    margin-left: 0;
+  }
+}
+
+.c-p-strip__item-icon {
+  max-width: $ps-icon-w;
+  max-height: $ps-icon-w;
+}
+
+.c-p-strip__item-label {
+  padding: $ps-label-pad;
+  font-size: $_fs-xsmall;
+  color: $_color-grey;
+}
