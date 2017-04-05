@@ -3,17 +3,9 @@ $tb-pad:  15px;
 
 .o-text-block {
   padding: $tb-pad 0;
+  font-size: $_fs-small;
 
   & + .o-text-block {
     @include _divider;
   }
-}
-
-.o-text-block__title {
-  font-size: $_fs-normal;
-  font-weight: normal;
-}
-
-.o-text-block__text {
-  font-size: $_fs-small;
 }

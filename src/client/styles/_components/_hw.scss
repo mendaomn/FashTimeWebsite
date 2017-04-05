@@ -1,7 +1,34 @@
+// Vars
+$hw-gutter: 50px;
+$hw-par-margin: 50px;
+
 .c-hw {
   @include _sidepadding;
 }
 
+.c-hw__pars {
+  display: flex;
+  justify-content: space-between;
+
+  .c-hw__par {
+    flex: 1;
+  }
+}
+
+.c-hw__par {
+  margin-top: $hw-par-margin;
+}
+
+.c-hw__par--gutter-left {
+  margin-left: $hw-gutter;
+}
+
+.c-hw__par-body {
+  text-align: center;
+}
+
 .c-hw__text-block {
   @include _divider;
+
+  margin-top: $title-margin;
 }

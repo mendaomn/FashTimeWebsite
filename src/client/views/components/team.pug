@@ -1,3 +1,4 @@
+include title
 include team-member
 
 -
@@ -43,8 +44,7 @@ include team-member
   ];
 
 section.c-team
-  - var titleText = "The FashTime Founders"
-  include title
+  +title("The FashTime Founders")
 
   .c-team__cols
     .c-team__col
@@ -57,8 +57,7 @@ section.c-team
       +team-member(members[3])
 
   .c-team__tools
-    - var titleText = "How we work: a strongly organized startup"
-    include title
+    +title("How we work: a strongly organized startup")
 
     .c-team__tool
       .c-team__tool-img

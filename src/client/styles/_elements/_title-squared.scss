@@ -1,0 +1,10 @@
+// Spacing
+$tsq-pad:  10px;
+
+.o-title-squared {
+  padding: $tsq-pad;
+  border: 1px solid $_color-crimson;
+  color: $_color-crimson;
+  font-size: $_fs-small;
+  text-align: center;
+}

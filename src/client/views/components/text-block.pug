@@ -1,6 +1,2 @@
-.o-text-block
-
-  if textBlockTitle
-    h2.o-text-block__title= textBlockTitle
-
-  .o-text-block__text!= textBlockText
+mixin text-block(text)
+  .o-text-block!= text
