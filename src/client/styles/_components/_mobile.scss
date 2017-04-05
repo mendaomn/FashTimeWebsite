@@ -3,6 +3,7 @@ $mob-screen-margin: 50px;
 $mob-screen-title-margin: 50px;
 $mob-screen-descr-w: 400px;
 $mob-screen-h: 600px;
+$mob-screen-h-s: 300px;
 
 
 .c-mobile {
@@ -44,4 +45,15 @@ $mob-screen-h: 600px;
   margin-left: auto;
   margin-right: auto;
   max-width: $mob-screen-descr-w;
+}
+
+@media (max-width: $_bp-m) {
+  .c-mobile__screen {
+    flex-direction: column;
+  }
+
+  .c-mobile__img {
+    margin-bottom: $mob-screen-margin;
+    height: $mob-screen-h-s;
+  }
 }

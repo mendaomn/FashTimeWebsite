@@ -32,3 +32,13 @@ $hw-par-margin: 50px;
 
   margin-top: $title-margin;
 }
+
+@media (max-width: $_bp-m) {
+  .c-hw__pars {
+    flex-direction: column;
+  }
+
+  .c-hw__par--gutter-left {
+    margin-left: 0;
+  }
+}

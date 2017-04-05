@@ -1,6 +1,7 @@
 // Vars
 $ps-pad: 75px;
 $ps-item-margin: 100px;
+$ps-item-margin-s: 25px;
 $ps-icon-w: 150px;
 $ps-label-pad: 10px;
 
@@ -30,4 +31,19 @@ $ps-label-pad: 10px;
   padding: $ps-label-pad;
   font-size: $_fs-xsmall;
   color: $_color-grey;
+}
+
+@media (max-width: $_bp-m) {
+  .c-p-strip {
+    flex-direction: column;
+  }
+
+  .c-p-strip__item {
+    margin-left: 0;
+    margin-top: $ps-item-margin-s;
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
 }
