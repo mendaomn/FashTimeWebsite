@@ -2,11 +2,12 @@
 $mob-screen-margin: 50px;
 $mob-screen-title-margin: 50px;
 $mob-screen-descr-w: 400px;
-$mob-screen-h: 600px;
+$mob-screen-w: 400px;
 
 
 .c-bus {
   @include _sidepadding;
+  @include _wrapper;
 }
 
 .c-bus__screen {
@@ -17,7 +18,7 @@ $mob-screen-h: 600px;
 }
 
 .c-bus__img {
-  height: $mob-screen-h;
+  width: $mob-screen-w;
 
   img {
     max-width: 100%;

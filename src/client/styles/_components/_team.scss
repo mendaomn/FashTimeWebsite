@@ -8,6 +8,7 @@ $tm-tool-img-w: 100px;
 
 .c-team {
   @include _sidepadding;
+  @include _wrapper;
 }
 
 .c-team__cols {

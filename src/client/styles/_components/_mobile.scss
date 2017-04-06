@@ -8,6 +8,7 @@ $mob-screen-h-s: 300px;
 
 .c-mobile {
   @include _sidepadding;
+  @include _wrapper;
 
   .o-title {
     margin-top: 0;

@@ -26,6 +26,12 @@
   padding-right: $grid-margin-side;
 }
 
+@mixin _wrapper {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1024px;
+}
+
 // Transitions
 
 @mixin _fasttransition($property) {

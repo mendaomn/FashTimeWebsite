@@ -17,7 +17,8 @@
 
 .team-intro {
   @include _sidepadding;
+  @include _wrapper;
 
-  margin: 50px 0;
-  max-width: 1000px;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
