@@ -1,7 +1,8 @@
 // Vars
 $title-margin: 35px;
+$title-margin-s: 15px;
 
 .o-title {
-  margin: $title-margin 0;
+  margin: $title-margin 0 $title-margin-s;
   font-size: $_fs-normal;
 }

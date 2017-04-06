@@ -1,3 +1,8 @@
+// Vars
+$divider-margin: 50px;
+
 .o-divider {
   @include _divider;
+
+  margin: $divider-margin 0;
 }
