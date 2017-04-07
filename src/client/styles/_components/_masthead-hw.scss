@@ -13,6 +13,7 @@ $mh-about-lead-w: 1000px;
   align-items: center;
   padding-bottom: $grid-margin-side;
   height: $mh-about-h;
+  height: calc(100% - #{$nav-height});
   background-color: $_color-darkshaft;
   background-image: url(images/raw/backgrounds/hw-masthead.jpg);
   background-size: cover;

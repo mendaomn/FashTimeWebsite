@@ -2,9 +2,6 @@
 $ft-margin: 25px;
 
 .c-footer {
-  @include _sidepadding;
-  @include _wrapper;
-
-  margin-top: $ft-margin;
-  margin-bottom: $ft-margin;
+  padding-bottom: $ft-margin;
+  background-color: $_color-alabaster;
 }

@@ -1,6 +1,7 @@
 // Vars
-$tm-butterfly-w: 220px;
-$tm-butterfly-w-s: 175px;
+$tm-butterfly-w: 150px;
+$tm-butterfly-w-s: 105px;
+$tm-butterfly-margin: 25px;
 $tm-tools-margin: 50px;
 $tm-tool-margin: 50px;
 $tm-tool-descr-margin: 100px;
@@ -17,7 +18,12 @@ $tm-tool-img-w: 100px;
   align-items: center;
 }
 
+.c-team__col--center {
+  text-align: center;
+}
+
 .c-team__butterfly {
+  margin-right: $tm-butterfly-margin;
   width: $tm-butterfly-w;
 }
 
@@ -25,7 +31,6 @@ $tm-tool-img-w: 100px;
   @include _divider;
 
   margin-top: $tm-tools-margin;
-  padding-top: $tm-tools-margin;
 }
 
 .c-team__tool {

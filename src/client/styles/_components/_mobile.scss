@@ -1,14 +1,17 @@
 // Vars
+$mob-margin: 25px;
 $mob-screen-margin: 50px;
 $mob-screen-title-margin: 25px;
 $mob-screen-descr-w: 400px;
-$mob-screen-h: 600px;
+$mob-screen-h: 400px;
 $mob-screen-h-s: 300px;
 
 
 .c-mobile {
   @include _sidepadding;
   @include _wrapper;
+
+  margin-bottom: $mob-margin;
 
   .o-title {
     margin-top: 0;

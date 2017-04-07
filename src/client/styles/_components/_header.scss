@@ -1,3 +1,6 @@
+// Vars
+$hdr-logo-h: 35px;
+
 .c-header {
   @include _sidepadding;
   @include _wrapper;
@@ -9,9 +12,10 @@
 }
 
 .c-header__logo {
-  height: 100%;
+  height: $hdr-logo-h;
 
   img {
+    margin-right: 15px;
     max-width: 100%;
     max-height: 100%;
   }
