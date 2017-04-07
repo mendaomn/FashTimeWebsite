@@ -1,6 +1,3 @@
-include components/title
-include components/text-block
-
 doctype html
 html(lang="en")
   head
@@ -13,9 +10,6 @@ html(lang="en")
     - var headerpageName = "About"
     include components/header
     include components/masthead-about
-    div(style="padding: 50px")
-      +title("Why we are here: a living breathing purpose")
-      include components/text-block
-      include components/text-block
+    include components/about
     include components/sitemap
     include components/loadFont

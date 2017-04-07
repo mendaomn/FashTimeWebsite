@@ -5,6 +5,8 @@ $hw-par-margin: 50px;
 .c-hw {
   @include _sidepadding;
   @include _wrapper;
+
+  margin-bottom: $hw-par-margin;
 }
 
 .c-hw__pars {

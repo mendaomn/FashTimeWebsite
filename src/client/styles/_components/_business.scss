@@ -7,6 +7,9 @@ $bus-screen-w-s: 150px;
 $bus-circle-title-pad: 10px;
 $bus-circle-margin: 25px;
 $bus-circle-w: 125px;
+$bus-summary-pad: 25px;
+$bus-summary-pad-l: 50px;
+$bus-summary-w: 600px;
 
 
 .c-bus {
@@ -79,6 +82,37 @@ $bus-circle-w: 125px;
   color: $_color-crimson;
   border-radius: 50%;
   border: 1px solid $_color-crimson;
+}
+
+.c-bus__summary {
+  text-align: center;
+}
+
+.c-bus__summary-box {
+  display: inline-block;
+  padding: $bus-summary-pad $bus-summary-pad-l;
+  width: $bus-summary-w;
+  max-width: 100%;
+  border: 1px solid $_color-crimson;
+}
+
+.c-bus__summary-title {
+  margin-bottom: $bus-circle-margin;
+}
+
+.c-bus__cta {
+  margin: 50px 0;
+  text-align: center;
+  color: $_color-grey;
+}
+
+.c-bus__cta-btn {
+  padding: 10px;
+  border-radius: 8px;
+  background-color: $_color-crimson;
+  width: 300px;
+  max-width: 100%;
+  color: $_color-white;
 }
 
 @media (max-width: $_bp-m) {

@@ -4,8 +4,6 @@ $mh-about-lead-margin: 75px;
 $mh-about-lead-w: 1000px;
 
 .c-masthead {
-  @include _sidepadding;
-
   overflow: auto;
   display: flex;
   flex-direction: column;
@@ -21,6 +19,9 @@ $mh-about-lead-w: 1000px;
 }
 
 .c-masthead__lead {
+  @include _sidepadding;
+  @include _wrapper;
+
   align-self: flex-start;
   margin-top: $mh-about-lead-margin;
   max-width: $mh-about-lead-w;
