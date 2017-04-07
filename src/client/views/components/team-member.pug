@@ -8,11 +8,11 @@ mixin team-member(member)
       .c-team-member__nationality= member.nationality
       if member.linkedin
         a.c-team-member__link(href!=member.linkedin)
-          img(src="/images/raw/icons/linkedin.png")
+          img(src="/images/linkedin.png")
       if member.angellist
         a.c-team-member__link(href!=member.angellist)
-          img(src="/images/raw/icons/angellist.png")
+          img(src="/images/angellist.png")
       if member.medium
         a.c-team-member__link(href!=member.medium)
-          img(src="/images/raw/icons/medium.png")
+          img(src="/images/medium.png")
     .c-team-member__bio= member.bio

@@ -15,7 +15,7 @@ $mh-about-lead-w: 1000px;
   height: $mh-about-h;
   height: calc(100% - #{$nav-height});
   background-color: $_color-darkshaft;
-  background-image: url(images/raw/backgrounds/mobile-masthead.jpeg);
+  background-image: url(images/mobile-masthead.jpeg);
   background-size: cover;
   background-position: center;
 }
