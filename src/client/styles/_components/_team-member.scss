@@ -1,6 +1,7 @@
 // Vars
 $tmbr-w: 380px;
 $tmbr-margin: 100px;
+$tmbr-margin-l: 150px;
 $tmbr-img-w: 120px;
 $tmbr-img-margin: 25px;
 $tmbr-role-pad: 3px;
@@ -12,6 +13,10 @@ $tmbr-bio-margin: 15px;
 .c-team-member {
   margin-top: $tmbr-margin;
   max-width: $tmbr-w;
+
+  &:last-child {
+    margin-top: $tmbr-margin-l;
+  }
 }
 
 .c-team-member img {
