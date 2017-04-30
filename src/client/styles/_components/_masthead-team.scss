@@ -1,6 +1,6 @@
 // Vars
 $mh-about-h: 550px;
-$mh-about-lead-margin: 75px;
+$mh-about-lead-margin: 50px;
 $mh-about-lead-w: 1000px;
 
 .c-masthead {
@@ -10,8 +10,8 @@ $mh-about-lead-w: 1000px;
   justify-content: space-between;
   align-items: center;
   padding-bottom: $grid-margin-side;
-  height: $mh-about-h;
-  height: calc(100% - #{$nav-height});
+  // height: $mh-about-h;
+  min-height: calc(100% - #{$nav-height});
   @include _gradient;
 }
 
@@ -21,9 +21,12 @@ $mh-about-lead-w: 1000px;
 
   align-self: flex-start;
   margin-top: $mh-about-lead-margin;
+  margin-bottom: $mh-about-lead-margin;
   max-width: $mh-about-lead-w;
   color: $_color-white;
+}
 
+@media (min-width: $_bp-m) {
   .o-text-block {
     font-size: $_fs-normal;
   }
