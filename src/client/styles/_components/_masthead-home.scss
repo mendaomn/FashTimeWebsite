@@ -15,9 +15,7 @@ $mh-home-btn-h: 65px;
   align-items: center;
   padding-bottom: $grid-margin-side;
   // height: $mh-home-h;
-  height: 100%;
-  background-color: $_color-crimson;
-  background-image: linear-gradient(to right, $_color-crimson, $_color-orange);
+  height: calc(100% - 85px);
 }
 
 .c-masthead__lead {

@@ -1,3 +1,6 @@
+include components/header
+include components/sitemap
+
 doctype html
 html(lang="en")
   head
@@ -7,6 +10,7 @@ html(lang="en")
     style
       include ../styles/home.core.css
   body
+    +header("Home", "c-header--apps")
     include components/masthead-home
-    include components/sitemap
+    +sitemap("c-footer--colored")
     include components/loadFont

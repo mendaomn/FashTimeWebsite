@@ -1,6 +1,9 @@
 // Vars
 $hdr-logo-h: 35px;
 
+$hdr-btn-padding: 15px;
+$hdr-btn-h: 65px;
+
 .c-header {
   @include _sidepadding;
   @include _wrapper;
@@ -8,7 +11,16 @@ $hdr-logo-h: 35px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: $nav-height;
+}
+
+.c-header--apps {
+  .c-header__page-name {
+    display: none;
+  }
+
+  .c-header__btns {
+    display: flex;
+  }
 }
 
 .c-header__logo {
@@ -23,4 +35,27 @@ $hdr-logo-h: 35px;
 
 .c-header__page-name {
   color: $_color-grey;
+}
+
+.c-header__btns {
+  display: none;
+}
+
+.c-header__ios-btn,
+.c-header__andr-btn {
+  padding: $hdr-btn-padding;
+  height: $hdr-btn-h;
+  text-align: center;
+
+  img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+}
+
+.c-header__andr-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgba($_color-darkshaft, 0.4);
 }

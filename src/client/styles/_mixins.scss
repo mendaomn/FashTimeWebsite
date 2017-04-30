@@ -43,3 +43,8 @@
 @mixin _divider {
   border-top: 5px solid $_color-crimson;
 }
+
+@mixin _gradient {
+  background-color: $_color-crimson;
+  background-image: linear-gradient(to right, $_color-crimson, $_color-orange);
+}

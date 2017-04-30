@@ -5,3 +5,18 @@ $ft-margin: 25px;
   padding-bottom: $ft-margin;
   background-color: $_color-alabaster;
 }
+
+.c-footer--colored {
+  @include _gradient;
+
+  color: $_color-white;
+
+  a {
+    color: $_color-white;
+
+    &[disabled] {
+      color: $_color-grey;
+      cursor: default;
+    }
+  }
+}
