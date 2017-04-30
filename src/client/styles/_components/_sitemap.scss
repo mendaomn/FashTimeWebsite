@@ -13,6 +13,7 @@ $sitemap-block-width: 100px;
 }
 
 .c-sitemap-block {
+  margin-left: $sitemap-item-margin;
   min-width: $sitemap-block-width;
   text-align: center;
 }
