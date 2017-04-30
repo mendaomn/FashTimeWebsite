@@ -1,0 +1,30 @@
+// Vars
+$mh-about-h: 550px;
+$mh-about-lead-margin: 75px;
+$mh-about-lead-w: 1000px;
+
+.c-masthead {
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: $grid-margin-side;
+  height: $mh-about-h;
+  height: calc(100% - #{$nav-height});
+  @include _gradient;
+}
+
+.c-masthead__lead {
+  @include _sidepadding;
+  @include _wrapper;
+
+  align-self: flex-start;
+  margin-top: $mh-about-lead-margin;
+  max-width: $mh-about-lead-w;
+  color: $_color-white;
+
+  .o-text-block {
+    font-size: $_fs-normal;
+  }
+}

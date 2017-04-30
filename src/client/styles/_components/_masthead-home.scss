@@ -15,7 +15,7 @@ $mh-home-btn-h: 65px;
   align-items: center;
   padding-bottom: $grid-margin-side;
   // height: $mh-home-h;
-  height: calc(100% - 85px);
+  height: calc(100% - #{$nav-height});
 }
 
 .c-masthead__lead {

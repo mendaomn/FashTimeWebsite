@@ -4,7 +4,7 @@ $tm-butterfly-w-s: 105px;
 $tm-butterfly-margin: 25px;
 $tm-tools-margin: 50px;
 $tm-tool-margin: 50px;
-$tm-tool-descr-margin: 100px;
+$tm-tool-descr-margin: 50px;
 $tm-tool-img-w: 100px;
 
 .c-team {
@@ -33,8 +33,15 @@ $tm-tool-img-w: 100px;
   margin-top: $tm-tools-margin;
 }
 
-.c-team__tool {
+.c-team__tools-list {
   display: flex;
+  justify-content: space-between;
+}
+
+.c-team__tool {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
   margin: $tm-tool-margin 0;
 }
 
@@ -52,8 +59,9 @@ $tm-tool-img-w: 100px;
 }
 
 .c-team__tool-descr {
-  margin-left: $tm-tool-descr-margin;
+  margin-top: $tm-tool-descr-margin;
   max-width: 300px;
+  text-align: center;
 }
 
 .c-team__hire {
@@ -124,13 +132,17 @@ $tm-tool-img-w: 100px;
     justify-content: center;
   }
 
-  .c-team__tool {
+  .c-team__tools-list {
+    display: flex;
     flex-direction: column;
-    align-items: center;
+  }
+
+  .c-team__tool {
+    display: flex;
   }
 
   .c-team__tool-descr {
-    margin-top: 0.25 * $tm-tool-margin;
+    margin-top: 0.5 * $tm-tool-descr-margin;
     margin-left: 0;
     max-width: none;
     text-align: center;

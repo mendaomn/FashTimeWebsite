@@ -1,4 +1,3 @@
-include title
 include team-member
 
 -
@@ -51,7 +50,7 @@ section.c-team
       +team-member(members[0])
       +team-member(members[2])
     .c-team__col.c-team__col--center
-      img.c-team__butterfly(src="/images/butterfly-colored.png")
+      img.c-team__butterfly(src="/images/butterfly-colored2.png")
     .c-team__col
       +team-member(members[1])
       +team-member(members[3])
@@ -59,23 +58,24 @@ section.c-team
   .c-team__tools
     +title("How we work: A strongly organized startup")
 
-    .c-team__tool
-      .c-team__tool-img
-        img(src="/images/axure.png")
-      .c-team__tool-descr Functional & creative briefs, prototyping, wireframing, UX design, functional design
-
-    .c-team__tool
-      .c-team__tool-img
-        img(src="/images/slack.png")
-      .c-team__tool-descr Team collaboration and communication
-
-    .c-team__tool
-      .c-team__tool-imgs
+    .c-team__tools-list
+      .c-team__tool
         .c-team__tool-img
-          img(src="/images/asana.png")
+          img(src="/images/axure.png")
+        .c-team__tool-descr Functional & creative briefs, prototyping, wireframing, UX design, functional design
+
+      .c-team__tool
         .c-team__tool-img
-          img(src="/images/drive.png")
-      .c-team__tool-descr Startup Management (product + all other units)
+          img(src="/images/slack.png")
+        .c-team__tool-descr Team collaboration and communication
+
+      .c-team__tool
+        .c-team__tool-imgs
+          .c-team__tool-img
+            img(src="/images/asana.png")
+          .c-team__tool-img
+            img(src="/images/drive.png")
+        .c-team__tool-descr Startup Management (product + all other units)
 
 .c-team__hire
   .c-team__hire-title

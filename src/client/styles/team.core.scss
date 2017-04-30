@@ -10,15 +10,8 @@
 
 // Components
 @import '_components/_header';
+@import '_components/_masthead-team';
 @import '_components/_team';
 @import '_components/_team-member';
 @import '_components/_footer';
 @import '_components/_sitemap';
-
-.team-intro {
-  @include _sidepadding;
-  @include _wrapper;
-
-  margin-top: 50px;
-  margin-bottom: 50px;
-}

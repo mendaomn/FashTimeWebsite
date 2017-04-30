@@ -11,6 +11,8 @@ $hdr-btn-h: 65px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  height: $nav-height;
 }
 
 .c-header--apps {

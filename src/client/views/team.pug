@@ -1,4 +1,7 @@
+include components/title
 include components/text-block
+include components/header
+include components/sitemap
 
 doctype html
 html(lang="en")
@@ -9,12 +12,8 @@ html(lang="en")
     style
       include ../styles/team.core.css
   body
-    - var headerpageName = "Team"
-    include components/header
-    .team-intro
-      +text-block("The founders team is an unusual but fitting combination of different skills, backgrounds and personalities. Its members come from three different countries (Italy, Germany & Spain) and they are all under 27 years old. The whole team met in Madrid Spain during the first months of 2015.")
-      +text-block("Mauro Di Benedetto and Marco Borgato met during their undergrad studies at Bocconi University (Milan). Marco had the idea to implement the concept of time for a social app back in 2013. The FashTime Team is focused on building a culture made of purpose/vision/mission/values-driven individuals and design thinkers.")
-      +text-block("The FashTime Team is focused on building a culture made of purpose/vision/mission/values-driven individuals and design thinkers. Follow the way of the butterfly… ")
-    include components/team.pug
-    include components/sitemap
+    +header("Team")
+    include components/masthead-team
+    include components/team
+    +sitemap()
     include components/loadFont
