@@ -6,10 +6,10 @@ $sitemap-block-width: 150px;
 .c-sitemap {
   @include _sidepadding;
   @include _wrapper;
-  
+
   display: flex;
   justify-content: space-between;
-  font-size: $_fs-small;
+  font-size: $_fs-xsmall;
 }
 
 .c-sitemap-block {
