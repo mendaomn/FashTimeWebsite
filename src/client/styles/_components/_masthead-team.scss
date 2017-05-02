@@ -10,7 +10,7 @@ $mh-about-lead-w: 1000px;
   justify-content: space-between;
   align-items: center;
   padding-bottom: $grid-margin-side;
-  // height: $mh-about-h;
+  min-height: $mh-about-h;
   min-height: calc(100% - #{$nav-height});
   @include _gradient;
 }
