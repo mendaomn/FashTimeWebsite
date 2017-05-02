@@ -1,8 +1,8 @@
 // Vars
-$ps-pad: 75px;
+$ps-pad: 35px;
 $ps-item-margin: 100px;
 $ps-item-margin-s: 25px;
-$ps-icon-w: 150px;
+$ps-icon-w: 100px;
 $ps-label-pad: 10px;
 
 .c-p-strip {
@@ -14,7 +14,7 @@ $ps-label-pad: 10px;
 
 .c-p-strip__item {
   margin-left: $ps-item-margin;
-  width: $ps-icon-w;
+  // width: $ps-icon-w;
   text-align: center;
 
   &:first-child {
@@ -23,7 +23,7 @@ $ps-label-pad: 10px;
 }
 
 .c-p-strip__item-icon {
-  max-width: $ps-icon-w;
+  // max-width: $ps-icon-w;
   max-height: $ps-icon-w;
 }
 

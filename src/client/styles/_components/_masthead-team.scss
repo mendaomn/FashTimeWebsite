@@ -13,6 +13,12 @@ $mh-about-lead-w: 1000px;
   min-height: $mh-about-h;
   min-height: calc(100% - #{$nav-height});
   @include _gradient;
+
+  @media (min-width: $_bp-m) {
+    .o-text-block {
+      font-size: $_fs-normal;
+    }
+  }
 }
 
 .c-masthead__lead {
@@ -24,10 +30,4 @@ $mh-about-lead-w: 1000px;
   margin-bottom: $mh-about-lead-margin;
   max-width: $mh-about-lead-w;
   color: $_color-white;
-}
-
-@media (min-width: $_bp-m) {
-  .o-text-block {
-    font-size: $_fs-normal;
-  }
 }

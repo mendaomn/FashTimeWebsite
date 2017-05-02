@@ -1,3 +1,6 @@
+include components/header
+include components/sitemap
+
 doctype html
 html(lang="en")
   head
@@ -7,9 +10,8 @@ html(lang="en")
     style
       include ../styles/about.core.css
   body
-    - var headerpageName = "About"
-    include components/header
+    +header("About")
     include components/masthead-about
     include components/about
-    include components/sitemap
+    +sitemap()
     include components/loadFont

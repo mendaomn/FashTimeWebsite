@@ -10,12 +10,18 @@ $mh-about-lead-w: 1000px;
   justify-content: space-between;
   align-items: center;
   padding-bottom: $grid-margin-side;
-  height: $mh-about-h;
-  height: calc(100% - #{$nav-height});
+  min-height: $mh-about-h;
+  min-height: calc(100% - #{$nav-height});
   background-color: $_color-anzac;
   background-image: url(images/about-masthead.png);
   background-size: cover;
   background-position: center;
+
+  @media (min-width: $_bp-m) {
+    .o-text-block {
+      font-size: $_fs-normal;
+    }
+  }
 }
 
 .c-masthead__lead {
