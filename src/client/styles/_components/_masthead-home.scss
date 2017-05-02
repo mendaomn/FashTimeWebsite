@@ -25,12 +25,8 @@ $mh-home-btn-h: 65px;
   font-size: $_fs-normal;
 }
 
-.c-masthead__logo {
-  height: 200px;
-
-  img {
-    max-height: 100%;
-  }
+.c-masthead__video iframe {
+  max-width: 100%;
 }
 
 .c-masthead__btns {

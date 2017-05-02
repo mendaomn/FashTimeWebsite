@@ -62,3 +62,10 @@ $hdr-btn-h: 65px;
   color: rgba($_color-darkshaft, 0.4);
   font-size: $_fs-xsmall;
 }
+
+@media (max-width: $_bp-m) {
+  .c-header--apps
+  .c-header__btns {
+    display: none;
+  }
+}
