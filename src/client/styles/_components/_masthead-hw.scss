@@ -13,15 +13,21 @@ $mh-about-lead-w: 1000px;
   height: $mh-about-h;
   height: calc(100% - #{$nav-height});
   background-color: $_color-darkshaft;
-  background-image: url(images/hw-masthead.jpg);
+  background-image: url(images/hw-masthead.png);
   background-size: cover;
   background-position: center;
+
+  @media (min-width: $_bp-m) {
+    .o-text-block {
+      font-size: $_fs-normal;
+    }
+  }
 }
 
 .c-masthead__lead {
   @include _sidepadding;
   @include _wrapper;
-  
+
   align-self: flex-start;
   margin-top: $mh-about-lead-margin;
   max-width: $mh-about-lead-w;

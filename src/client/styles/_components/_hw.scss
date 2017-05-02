@@ -3,45 +3,30 @@ $hw-gutter: 50px;
 $hw-par-margin: 50px;
 
 .c-hw {
-  @include _sidepadding;
-  @include _wrapper;
-
   margin-bottom: $hw-par-margin;
 }
 
-.c-hw__pars {
-  display: flex;
-  justify-content: space-between;
-
-  .c-hw__par {
-    flex: 1;
-  }
+.c-hw .o-title {
+  margin-bottom: $hw-par-margin;
 }
 
 .c-hw__par {
-  margin-top: $hw-par-margin;
+  @include _alternateColor;
+
+  padding-top: $hw-par-margin;
+  padding-bottom: $hw-par-margin;
 }
 
-.c-hw__par--gutter-left {
-  margin-left: $hw-gutter;
-}
-
-.c-hw__par-body {
-  text-align: center;
+.c-hw__par-content,
+.c-hw__competences {
+  @include _sidepadding;
+  @include _wrapper;
 }
 
 .c-hw__text-block {
-  @include _divider;
-
   margin-top: $title-margin;
 }
 
-@media (max-width: $_bp-m) {
-  .c-hw__pars {
-    flex-direction: column;
-  }
-
-  .c-hw__par--gutter-left {
-    margin-left: 0;
-  }
+.c-hw__competences .o-divider {
+  margin-top: 0;
 }

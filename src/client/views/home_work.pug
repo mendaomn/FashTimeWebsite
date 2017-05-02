@@ -1,3 +1,6 @@
+include components/header
+include components/sitemap
+
 doctype html
 html(lang="en")
   head
@@ -7,9 +10,8 @@ html(lang="en")
     style
       include ../styles/hw.core.css
   body
-    - var headerpageName = "Home work"
-    include components/header
+    +header("Home work")
     include components/masthead-hw
     include components/hw
-    include components/sitemap
+    +sitemap()
     include components/loadFont
