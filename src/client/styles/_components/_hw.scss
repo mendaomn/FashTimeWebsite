@@ -23,6 +23,10 @@ $hw-par-margin: 50px;
   @include _wrapper;
 }
 
+.c-hw__par-title {
+  font-weight: 600;
+}
+
 .c-hw__text-block {
   margin-top: $title-margin;
 }

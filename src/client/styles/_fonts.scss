@@ -4,7 +4,18 @@
     src: url('/fonts/Lato/fonts/Lato-Regular.eot?#iefix') format('embedded-opentype'),
          url('/fonts/Lato/fonts/Lato-Regular.woff') format('woff'),
          url('/fonts/Lato/fonts/Lato-Regular.ttf') format('truetype');
-    font-weight: normal;
+    font-weight: 600;
+    font-style: normal;
+    text-rendering: optimizeLegibility;
+}
+
+@font-face {
+    font-family: 'Lato Web';
+    src: url('/fonts/Lato/fonts/Lato-Light.eot');
+    src: url('/fonts/Lato/fonts/Lato-Light.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/Lato/fonts/Lato-Light.woff') format('woff'),
+         url('/fonts/Lato/fonts/Lato-Light.ttf') format('truetype');
+    font-weight: 400;
     font-style: normal;
     text-rendering: optimizeLegibility;
 }
