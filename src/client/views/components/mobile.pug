@@ -3,49 +3,89 @@ include title-squared
 include text-block
 
 .c-mobile
-  include products-strip
-  +title("The FashTime mobile app: What it is and how it works")
-  +text-block("FashTime’s mobile app is simply the new way (of perceiving Fashion). More specifically, FashTime’s mobile app is...")
+  .c-mobile__wrapper
+    +title("The FashTime mobile app: What it is and how it works")
+    +text-block("FashTime's Mobile App is THE Fashion-Lifestyle Network for Millennials and the first photo-sharing app to [i] sketch out our life's stories, [ii] be Time-based, [iii] introduce the swipe-to-vote on two paired photos.")
+    +text-block("FashTime's mobile app is simply the new way (of perceiving Fashion).  Smart, Magical, Different, Quick. More specifically, FashTime's Mobile App is...")
   .c-mobile__screen
-    .c-mobile__img
-      img(src="/images/iphone-mockup1.jpg", alt="")
-    .c-mobile__descr
-      .c-mobile__descr-title 1. The new way of joining & connecting with a social community.<br>Join & Connect Smarty
-      .c-mobile__descr-body
-        | -- The Profile Bubbles: Simply smarter --
-        div • Choose how to play. Sign up as Normal User or Pro one.
-        div • Our pro ‘bubbles’ categories include: influencers, models, designers, photographers, magazines, brands.
   .c-mobile__screen
-    .c-mobile__img
-      img(src="/images/iphone-mockup2.jpg", alt="")
-    .c-mobile__descr
-      .c-mobile__descr-title 2. The new way of sharing our life & discovering others'<br>Share & Discover Magically
-      .c-mobile__descr-body
-        | -- The Bubble Posts: Simply more fun  --
-        div • Two new type of posts: Moments (1photo post) & Challenges (2photos in1post).
-        div • Tag what you do, when, where & how you are with our bubbles.
-        div • Set the expiration date of a Challenge. Challenges can stay active up to max 1 week.
-        div • Share everywhere
-        div • Users can click the bubbles to filter content.
+    .c-mobile__wrapper
+      .c-mobile__img
+        img(src="/images/iphone-mockup1.jpg", alt="")
+      .c-mobile__descr
+        .c-mobile__descr-title The new way of joining & connecting with a social community.<br>Join & Connect Smarty
+        .c-mobile__descr-body
+          .bigger The Profile Bubbles: Simply smarter
+          p Choose how to play. Sign up as Normal User or Pro one.
+          p Our pro ‘bubbles’ categories include: influencers, models, designers, photographers, magazines, brands.
   .c-mobile__screen
-    .c-mobile__img
-      img(src="/images/iphone-mockup3.jpg", alt="")
-    .c-mobile__descr
-      .c-mobile__descr-title 3. The new way of liking & thinking<br>Like & Think Differently
-      .c-mobile__descr-body
-        | -- The Fash Time: Be Free from Likes --
-        div • Users can: Zoom and play with each post. Opening a photo makes spend seconds on it. Users can spend up to 15 seconds.
-        div • No more meaningless likes. Gain as many seconds you can. It’s about how much Time people spend on you. Check your Fash Time
-        div • You can spent Time too. After spending it, you have to collect it again. Stay Active. Time is money Check your Spendable Fash Time (SFT).
+    .c-mobile__wrapper
+      .c-mobile__img
+        img(src="/images/iphone-mockup2.jpg", alt="")
+      .c-mobile__descr
+        .c-mobile__descr-title The new way of sharing our life & discovering others'<br>Share & Discover Magically
+        .c-mobile__descr-body
+          .bigger The Bubble Posts: Simply more fun
+          p Two new type of posts: Moments (1-photo post) & Challenges (2 photos in 1 post).
+          p Tag what you do, when, where & how you are with our bubbles.
+          p Set the expiration date of a Challenge. Challenges can stay active up 1 week.
+          p Share everywhere
+          p Users can click the bubbles to filter content.
+
   .c-mobile__screen
-    .c-mobile__img
-      img(src="/images/iphone-mockup4.jpg", alt="")
-    .c-mobile__descr
-      .c-mobile__descr-title 4. The new way of voting & taking decisions<br>Help Others & Decide Quickly (Playfully)
-      .c-mobile__descr-body
-        | -- The Fash Swipe: like tinder, applied to 2 photos --
-        div • By posting a challenge (2 photos), you’re implicitly asking a question or you’re up to recommendations. Therefore, you need an answer fast.
-        div • By swiping left or right, it’s possible to express a preference on 2 photos. Once a challenge expires, see how many swiped A or B. Act accordingly.
-        div • Challenges are not invasive poll. No more comments or boring interfaces. It’s a fun game.
-  +text-block("<p>In other words, FashTime’s mobile app is the #1 photo-sharing app to [i] sketch out our life's stories, [ii] be Time-based, [iii] introduce the swipe-to-vote on two paired photos. This way, FashTime transforms how we perceive Fashion, ourselves and the world around us. Moreover, it makes us more connected, wishful to share and willing to help (through fashion). With FashTime we can [i] wear our true colors, [ii] feel truly recognized for who we are and [iii] become our best selves, together.")
-  +text-block("It's smart...magical...different...quick. It's FashTime, the new way.")
+    .c-mobile__wrapper
+      .c-mobile__img
+        img(src="/images/iphone-mockup3.jpg", alt="")
+      .c-mobile__descr
+        .c-mobile__descr-title The new way of liking & thinking<br>Like & Think Differently
+        .c-mobile__descr-body
+          .bigger The Fash Time: Be Free from Likes
+          p Users can: Zoom and play with each post. Opening a photo makes spend seconds on it. Users can spend up to 15 seconds.
+          p No more meaningless likes. Gain as many seconds you can. It’s about how much Time people spend on you. Check your Fash Time
+          p You can spent Time too. After spending it, you have to collect it again. Stay Active. Time is money Check your Spendable Fash Time (SFT).
+  .c-mobile__screen
+    .c-mobile__wrapper
+      .c-mobile__img
+        img(src="/images/iphone-mockup4.jpg", alt="")
+      .c-mobile__descr
+        .c-mobile__descr-title The new way of voting & taking decisions<br>Help Others & Decide Quickly (Playfully)
+        .c-mobile__descr-body
+          .bigger The Fash Swipe: Just like tinder, applied to 2 photos
+          p By posting a challenge (2 photos), you’re implicitly asking a question or you’re up to recommendations. Therefore, you need an answer fast.
+          p By swiping left or right, it’s possible to express a preference on 2 photos. Once a challenge expires, see how many swiped A or B. Act accordingly.
+          p Challenges are not invasive poll. No more comments or boring interfaces. It’s a fun game.
+  .c-mobile__par.c-mobile__wrapper
+    +text-block("<p>In other words, FashTime’s mobile app is the #1 photo-sharing app to [i] sketch out our life's stories, [ii] be Time-based, [iii] introduce the swipe-to-vote on two paired photos. This way, FashTime transforms how we perceive Fashion, ourselves and the world around us. Moreover, it makes us more connected, wishful to share and willing to help (through fashion). With FashTime we can [i] wear our true colors, [ii] feel truly recognized for who we are and [iii] become our best selves, together.")
+    +text-block("It's smart...magical...different...quick. It's FashTime, the new way.")
+  .c-mobile__millennials
+    .c-mobile__wrapper
+      +title("Millennials: how FashTime addresses them")
+    .c-mobile__millennials-strip
+    .c-mobile__millennials-strip
+      .c-mobile__wrapper
+        +text-block("Millennials (1)<br>They love living the Moment and sharing their daily life’s stories (ephemeral social-sharing experience)! They still post ‘lasting’ digital content to preserve their memories. They want to show what they wear (their style), as a part of their daily life’s stories, & be able to buy easily what they see online (See/Buy Now)!")
+    .c-mobile__millennials-strip
+      .c-mobile__wrapper
+        +text-block("FashTime (1)<br>Bubble posts enhance the way users share their life’s Moments and Challenges. Moments are meant to last forever while Challenges are ephemeral. Users make use of FashTags* (what they wear) & tag what they do, when & where.")
+        +text-block("<em>Users can truly preserve their past and easily relive it: while getting rid of what prevents them to fully live the present.</em><br>(*In line with the industry trend, FashTags allow social style discovery & shopping).")
+    .c-mobile__millennials-strip
+      .c-mobile__wrapper
+        +text-block("Millennials (2)<br>They feel the pressure to not be liked and truly recognized. They want to be interesting. They have a short attention span of around 8 seconds.")
+    .c-mobile__millennials-strip
+      .c-mobile__wrapper
+        +text-block("FashTime (2)<br>Time as the best way to measure interest on a photo.")
+        +text-block("Users can be seen & feel truly recognized for who they are (As a consequence, users are more willing to share ‘lasting’ digital life’s moments and show their true selves).")
+    .c-mobile__millennials-strip
+      .c-mobile__wrapper
+        +text-block("Millennials (3)<br>They are inclusive, not shy to (give) ask for advice. They expect things to happen fast and demand fast answers (productivity-driven). Low survey response rates: helping others on social media is time-consuming & not cool. They respond to ads/surveys. They want stories.")
+    .c-mobile__millennials-strip
+      .c-mobile__wrapper
+        +text-block("FashTime (3)<br>The Challenge as a playful “call to participate” (no direct questions; a new type of life’s story) versus a classic “call to action”! FashTime bases its entire UX on the concept of Swipe!")
+        +text-block("Users can get rid of what prevents them to fully live the present.")
+    .c-mobile__millennials-strip
+      .c-mobile__wrapper
+        +text-block("Millennials (4)<br>They don’t feel part of single social groups trying to compete against one other. They go beyond groups. They always strive to feel special, have a unique style and live without fears.")
+    .c-mobile__millennials-strip
+      .c-mobile__wrapper
+        +text-block("FashTime (4)<br>Users customize their profile/the posts they share through our bubbles + (see the previous solutions). “Be what you want, when you want, where you want and how you want”.")
+        +text-block("A place where users can show their true colors and feel like their their best selves, without the pressure to please others and fear of not recognition.")

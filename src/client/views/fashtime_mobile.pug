@@ -1,3 +1,6 @@
+include components/header
+include components/sitemap
+
 doctype html
 html(lang="en")
   head
@@ -7,9 +10,8 @@ html(lang="en")
     style
       include ../styles/mobile.core.css
   body
-    - var headerpageName = "Mobile App"
-    include components/header
+    +header("For Millennials")
     include components/masthead-mobile
     include components/mobile
-    include components/sitemap
+    +sitemap()
     include components/loadFont
