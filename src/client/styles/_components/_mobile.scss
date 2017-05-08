@@ -3,12 +3,11 @@ $mob-margin: 25px;
 $mob-screen-margin: 50px;
 $mob-screen-title-margin: 75px;
 $mob-screen-descr-w: 400px;
-$mob-screen-h: 400px;
+$mob-screen-h: 530px;
 $mob-screen-h-s: 300px;
 
-
 .c-mobile {
-  margin-bottom: $mob-margin;
+  padding-top: $mob-screen-margin;
 }
 
 .c-mobile__screen {
@@ -59,16 +58,21 @@ $mob-screen-h-s: 300px;
   margin-bottom: $mob-screen-margin;
 }
 
-.c-mobile__millennials {
+.c-mobile__millennials .o-title {
   @include _divider;
+
+  padding-top: $mob-screen-margin;
 }
 
 .c-mobile__millennials-strip {
   @include _alternateColor;
+  height: 300px;
 
   .c-mobile__wrapper {
-    padding-top: $mob-screen-margin;
-    padding-bottom: $mob-screen-margin;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
   }
 }
 
