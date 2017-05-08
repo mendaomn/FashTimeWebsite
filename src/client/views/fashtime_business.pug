@@ -1,3 +1,6 @@
+include components/header
+include components/sitemap
+
 doctype html
 html(lang="en")
   head
@@ -7,9 +10,8 @@ html(lang="en")
     style
       include ../styles/business.core.css
   body
-    - var headerpageName = "For Business"
-    include components/header
+    +header("For Business")
     include components/masthead-business
     include components/business
-    include components/sitemap
+    +sitemap()
     include components/loadFont

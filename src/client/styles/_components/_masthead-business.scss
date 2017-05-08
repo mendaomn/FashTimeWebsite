@@ -1,19 +1,19 @@
 // Vars
-$mh-about-h: 550px;
-$mh-about-lead-margin: 75px;
-$mh-about-lead-w: 1000px;
+$mh-bus-h: 550px;
+$mh-bus-lead-margin: 75px;
+$mh-bus-lead-w: 1000px;
 
 .c-masthead {
   overflow: auto;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   padding-bottom: $grid-margin-side;
-  height: $mh-about-h;
+  height: $mh-bus-h;
   height: calc(100% - #{$nav-height});
   background-color: $_color-darkshaft;
-  background-image: url(images/business-masthead.jpg);
+  background-image: url(images/business-masthead.png);
   background-size: cover;
   background-position: center;
 }
@@ -23,8 +23,14 @@ $mh-about-lead-w: 1000px;
   @include _wrapper;
 
   align-self: flex-start;
-  margin-top: $mh-about-lead-margin;
-  max-width: $mh-about-lead-w;
+  max-width: $mh-bus-lead-w;
   color: $_color-white;
-  font-size: $_fs-small;
+  font-size: $_fs-xlarge;
+  text-align: center;
+}
+
+@media (max-width: $_bp-m) {
+  .c-masthead__lead {
+    font-size: $_fs-medium;
+  }
 }

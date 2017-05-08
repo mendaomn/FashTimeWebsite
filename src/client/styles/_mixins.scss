@@ -55,3 +55,10 @@
     color: white;
   }
 }
+
+@mixin _alternateColor2 {
+  &:nth-child(2n+1) {
+    @include _gradient;
+    color: white;
+  }
+}

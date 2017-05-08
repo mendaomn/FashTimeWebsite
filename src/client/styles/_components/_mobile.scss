@@ -11,7 +11,7 @@ $mob-screen-h-s: 300px;
 }
 
 .c-mobile__screen {
-  @include _alternateColor;
+  @include _alternateColor2;
 
   .c-mobile__wrapper {
     display: flex;
@@ -65,7 +65,7 @@ $mob-screen-h-s: 300px;
 }
 
 .c-mobile__millennials-strip {
-  @include _alternateColor;
+  @include _alternateColor2;
   height: 300px;
 
   .c-mobile__wrapper {
