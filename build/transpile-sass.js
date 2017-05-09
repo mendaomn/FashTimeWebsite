@@ -23,6 +23,10 @@ const files = [
     in: path.join(inPath, 'business.core.scss'),
     out: path.join(inPath, 'business.core.css')
   }
+  , {
+    in: path.join(inPath, 'privacy.core.scss'),
+    out: path.join(inPath, 'privacy.core.css')
+  }
 ];
 
 const CleanCSS = require('clean-css');

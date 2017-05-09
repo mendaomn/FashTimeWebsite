@@ -1,0 +1,18 @@
+include components/title
+include components/text-block
+include components/header
+include components/sitemap
+
+doctype html
+html(lang="en")
+  head
+    meta(charset="utf-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    title FashTime - Privacy
+    style
+      include ../styles/privacy.core.css
+  body
+    +header("Team")
+    include components/terms
+    +sitemap()
+    include components/loadFont

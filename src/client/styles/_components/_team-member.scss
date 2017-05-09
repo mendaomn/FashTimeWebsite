@@ -13,10 +13,6 @@ $tmbr-bio-margin: 15px;
 .c-team-member {
   margin-top: $tmbr-margin;
   max-width: $tmbr-w;
-
-  &:last-child {
-    margin-top: $tmbr-margin-l;
-  }
 }
 
 .c-team-member img {

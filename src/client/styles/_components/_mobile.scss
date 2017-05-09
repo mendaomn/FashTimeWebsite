@@ -11,9 +11,12 @@ $mob-screen-h-s: 300px;
 }
 
 .c-mobile__screen {
-  @include _alternateColor2;
+  @include _sidepadding;
+  @include _wrapper;
 
-  .c-mobile__wrapper {
+  .c-mobile__screen-container {
+    @include _divider;
+
     display: flex;
     justify-content: space-between;
     align-items: center;

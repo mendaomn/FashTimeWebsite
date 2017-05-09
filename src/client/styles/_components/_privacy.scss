@@ -1,0 +1,11 @@
+.c-privacy {
+  overflow: auto;
+  @include _gradient;
+
+  color: $_color-white;
+}
+
+.c-privacy__wrapper {
+  @include _sidepadding;
+  @include _wrapper;
+}

@@ -2,6 +2,7 @@
 $tm-butterfly-w: 150px;
 $tm-butterfly-w-s: 105px;
 $tm-butterfly-margin: 25px;
+$tm-butterfly-margin-l: 100px;
 $tm-tools-margin: 50px;
 $tm-tool-margin: 50px;
 $tm-tool-descr-margin: 50px;
@@ -18,11 +19,19 @@ $tm-tool-img-w: 100px;
   align-items: center;
 }
 
+.c-team__col {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 780px;
+}
+
 .c-team__col--center {
   text-align: center;
 }
 
 .c-team__butterfly {
+  margin-top: $tm-butterfly-margin-l;
   margin-right: $tm-butterfly-margin;
   width: $tm-butterfly-w;
 }
@@ -48,10 +57,16 @@ $tm-tool-img-w: 100px;
 .c-team__tool-imgs {
   display: inline-flex;
   flex-direction: column;
+  height: 70px;
+
+  .c-team__tool-img {
+    height: auto;
+  }
 }
 
 .c-team__tool-img {
   max-width: $tm-tool-img-w;
+  height: 70px;
 
   img {
     max-width: 100%;
