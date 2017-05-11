@@ -57,7 +57,6 @@ $mob-screen-h-s: 300px;
 }
 
 .c-mobile__par {
-  margin-top: $mob-screen-margin;
   margin-bottom: $mob-screen-margin;
 }
 
@@ -79,6 +78,15 @@ $mob-screen-h-s: 300px;
     padding-bottom: 25px;
     height: 100%;
     min-height: 300px;
+
+  }
+
+  &.narrow {
+    padding-bottom: 25px;
+  }
+
+  &.narrow, &.narrow .c-mobile__wrapper {
+    min-height: 150px;
   }
 }
 
@@ -97,4 +105,22 @@ $mob-screen-h-s: 300px;
     margin-bottom: $mob-screen-margin;
     height: $mob-screen-h-s;
   }
+
+  .c-mobile__millennials-strip {
+    min-height: auto;
+
+    .c-mobile__wrapper {
+      min-height: auto;
+    }
+
+    &.narrow {
+      padding-bottom: 0;
+    }
+
+    &.narrow, &.narrow .c-mobile__wrapper {
+      min-height: auto;
+    }
+  }
+
+
 }

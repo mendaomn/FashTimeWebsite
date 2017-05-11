@@ -2,7 +2,7 @@
 $tm-butterfly-w: 150px;
 $tm-butterfly-w-s: 105px;
 $tm-butterfly-margin: 25px;
-$tm-butterfly-margin-l: 100px;
+$tm-butterfly-margin-l: 35px;
 $tm-tools-margin: 50px;
 $tm-tool-margin: 50px;
 $tm-tool-descr-margin: 50px;
@@ -23,7 +23,7 @@ $tm-tool-img-w: 100px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 780px;
+  height: 700px;
 }
 
 .c-team__col--center {
@@ -31,7 +31,6 @@ $tm-tool-img-w: 100px;
 }
 
 .c-team__butterfly {
-  margin-top: $tm-butterfly-margin-l;
   margin-right: $tm-butterfly-margin;
   width: $tm-butterfly-w;
 }
@@ -126,6 +125,7 @@ $tm-tool-img-w: 100px;
 
 @media (max-width: 1000px) {
   .c-team__butterfly {
+    margin-top: $tm-butterfly-margin-l;
     width: $tm-butterfly-w-s;
   }
 }

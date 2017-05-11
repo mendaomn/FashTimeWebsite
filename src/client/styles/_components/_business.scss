@@ -175,4 +175,21 @@ $bus-summary-w: 600px;
     margin-top: $bus-circle-margin;
     text-align: center;
   }
+
+  .c-p-strip {
+    padding-bottom: 25px;
+    flex-direction: row;
+
+    .c-p-strip__item {
+      margin-top: 0;
+
+      &:first-child {
+        margin-right: 25px;
+      }
+    }
+
+    .c-p-strip__item-icon {
+      max-height: 80px;
+    }
+  }
 }

@@ -2,7 +2,7 @@ mixin header(pageName, className)
   header.c-header(class=className)
     a.c-header__logo(href="/")
       img(src="images/butterfly-colored2.png", alt="FashTime's logo")
-      img(src="images/fashtime.jpg", alt="FashTime's logo")
+      img.desktop-only(src="images/fashtime.jpg", alt="FashTime's logo")
     .c-header__page-name= pageName
     .c-header__btns
       a.c-header__ios-btn(href="https://itunes.apple.com/gb/app/fashtime-the-new-way/id1126538070?mt=8")

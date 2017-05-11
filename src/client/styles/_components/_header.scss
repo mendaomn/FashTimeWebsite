@@ -64,8 +64,7 @@ $hdr-btn-h: 65px;
 }
 
 @media (max-width: $_bp-m) {
-  .c-header--apps
-  .c-header__btns {
+  .c-header__logo .desktop-only {
     display: none;
   }
 }
