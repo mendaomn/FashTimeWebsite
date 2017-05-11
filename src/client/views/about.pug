@@ -9,9 +9,11 @@ html(lang="en")
     title FashTime - About
     style
       include ../styles/about.core.css
+    include components/head
   body
     +header("About")
     include components/masthead-about
     include components/about
     +sitemap()
     include components/loadFont
+    include components/ga

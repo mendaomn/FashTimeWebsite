@@ -11,8 +11,10 @@ html(lang="en")
     title FashTime - Privacy
     style
       include ../styles/privacy.core.css
+    include components/head
   body
     +header("Privacy")
     include components/privacy
     +sitemap()
     include components/loadFont
+    include components/ga

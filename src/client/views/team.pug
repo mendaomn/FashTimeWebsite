@@ -11,9 +11,11 @@ html(lang="en")
     title FashTime - About
     style
       include ../styles/team.core.css
+    include components/head
   body
     +header("Team")
     include components/masthead-team
     include components/team
     +sitemap()
     include components/loadFont
+    include components/ga

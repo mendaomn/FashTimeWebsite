@@ -9,8 +9,10 @@ html(lang="en")
     title FashTime
     style
       include ../styles/home.core.css
+    include components/head
   body
     +header("Home", "c-header--apps")
     include components/masthead-home
     +sitemap("c-footer--colored")
     include components/loadFont
+    include components/ga

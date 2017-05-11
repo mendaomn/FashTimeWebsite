@@ -9,9 +9,11 @@ html(lang="en")
     title FashTime - For Business
     style
       include ../styles/business.core.css
+    include components/head
   body
     +header("For Business")
     include components/masthead-business
     include components/business
     +sitemap()
     include components/loadFont
+    include components/ga
