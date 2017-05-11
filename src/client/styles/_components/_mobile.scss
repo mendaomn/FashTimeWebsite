@@ -69,19 +69,22 @@ $mob-screen-h-s: 300px;
 
 .c-mobile__millennials-strip {
   @include _alternateColor2;
-  height: 300px;
+  min-height: 300px;
 
   .c-mobile__wrapper {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
     height: 100%;
+    min-height: 300px;
   }
 }
 
 @media (max-width: $_bp-m) {
   .c-mobile__screen {
-    .c-mobile__wrapper {
+    .c-mobile__screen-container {
       flex-direction: column;
     }
 
