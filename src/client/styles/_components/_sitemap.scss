@@ -48,6 +48,10 @@ $sitemap-block-width: 100px;
     flex-direction: column;
   }
 
+  .c-sitemap-block {
+    margin-left: 0;
+  }
+
   .c-sitemap-item img {
     position: relative;
     margin-bottom: -5px;

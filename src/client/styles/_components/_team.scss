@@ -135,12 +135,21 @@ $tm-tool-img-w: 100px;
     flex-direction: column;
   }
 
+  .c-team__col {
+    height: auto;
+  }
+
   .c-team__col--center {
     display: none;
   }
 
-  .c-team-member {
+  .c-team__col .c-team-member {
+    margin-top: 50px;
     text-align: center;
+
+    &:first-child {
+      margin-top: 35px;
+    }
   }
 
   .c-team-member__info {

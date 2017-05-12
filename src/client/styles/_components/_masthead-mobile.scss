@@ -1,6 +1,6 @@
 // Vars
 $mh-mobile-h: 550px;
-$mh-mobile-lead-margin: 75px;
+$mh-mobile-lead-margin: 50px;
 $mh-mobile-lead-w: 1000px;
 
 $mh-mobile-btn-padding: 15px;
@@ -35,6 +35,7 @@ $mh-mobile-btn-h: 65px;
   @include _wrapper;
 
   align-self: flex-start;
+  margin-top: $mh-mobile-lead-margin;
   max-width: $mh-mobile-lead-w;
   color: $_color-white;
   font-size: $_fs-xlarge;
@@ -75,7 +76,6 @@ $mh-mobile-btn-h: 65px;
 @media (max-width: $_bp-m) {
   .c-masthead__logo {
     width: 75px;
-    margin-bottom: 25px;
   }
 
   .c-masthead__lead {
